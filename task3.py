@@ -19,6 +19,21 @@ if email == correct_email:
 else:
     print("Email not found")
 
+#way no two
+email=input("enter you email adress: ")
+password=input("enter password: ")
+
+correct_email = "admin@gmail.com"
+correct_password = "Admin@123"
+
+if email == correct_email and password==correct_password:
+    print("acces granted")
+elif email==correct_email and password !=correct_password:
+    print("wrong password")
+else:
+    print("Email not found")
+
+
 # 2.
 # Create a program that validates an email:
 # "Invalid email" if it does not contain "@" or "."
@@ -164,19 +179,11 @@ else:
 # # "Warm" if 16–30
 # # "Hot" if > 30
 
-temp = int(input("Enter temperature: "))
+temp = int(input("Enter temperature: ")) 
 
-if temp <= 0:
-    print("Freezing")
+message = "Freezing" if temp <= 0 else "Cold" if temp <= 15 else "Warm" if temp <= 30 else "Hot"
 
-elif 1 <= temp <= 15:
-    print("Cold")
-
-elif 16 <= temp <= 30:
-    print("Warm")
-
-else:
-    print("Hot")
+print(message)
 
 # # 10.
 # # Create a program that takes a year and prints:
