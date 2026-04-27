@@ -1,12 +1,14 @@
 # Q1
 # A school administration system is tracking unpaid fees. Build a program that checks student payment status and flags those with outstanding balances.
-total_school_fees = int(input("amount paid: "))
+total_school_fees = int(input("Amount paid: "))
 amount = 5000
 
 if total_school_fees >= amount:
-    print("cleared")
-elif total_school_fees <= amount:
-    print("out standing balance")
+    status = "cleared"
+else:
+    status = "out standing balance"
+
+print(status)
 
 # Q2
 # A traffic system is monitoring speeding vehicles. Create a program that evaluates speed readings and determines whether a driver should be fined.
@@ -14,25 +16,33 @@ elif total_school_fees <= amount:
 speed = int(input("Enter speed: "))
 limit1 = 120
 limit2 = 80
-if speed <= limit1 and speed >= limit2:
-    print("normal speed")
-elif speed >= limit1 and speed >= limit2:
-    print("Over speed")
+
+if speed > limit1:
+    message = "Over speed"
+elif speed >= limit2:
+    message = "normal speed"
 else:
-    print("low speeding")
+    message = "low speeding"
+
+print(message)
 
 
 # Q3
 # A website login system is being improved. Create a program that checks login credentials and determines whether a user should be granted full access, limited access, or denied entry.
-user_email= input("Enter email: ")
-user_password = input("enter password: ")
+user_email = input("Enter email: ")
+user_password = input("Enter password: ")
 
 correct_email = "admin@gmail.com"
 correct_password = "admin@123"
 
-if user_email == correct_email and user_password == correct_password:
-    print("granted full access")
-elif user_email == correct_email and user_password != correct_password:
-    print("limited access")
+# Determine access level
+if user_email == correct_email:
+    if user_password == correct_password:
+        access_status = "granted full access"
+    else:
+        access_status = "limited access"
 else:
-    print("denied entry.")
+    access_status = "denied entry."
+
+# Single output at the end
+print(access_status)
