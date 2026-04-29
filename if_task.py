@@ -11,7 +11,7 @@
 # Otherwise “Wrong account type”
 
 amount = float(input("Enter transaction amount: "))
-account_type = input("Enter account type (Standard or Premium): ").strip()
+account_type = input("Enter account type (Standard or Premium): ").lower()
 
 if account_type == "standard":
     if amount > 500:
