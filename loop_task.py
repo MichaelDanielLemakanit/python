@@ -49,4 +49,12 @@ print(result)
 # write a program that counts and prints the number of even numbers between 1 and 50 using a for loop
 # ls1 = [ (“Jay”, ‘20’), (“Mo”, ‘30’), (“Mya”, ‘32’) ]
 # Display the total quantity of the 3 above.
+# Use standard straight quotes to remove red underlines
+lst1 = [("Jay", "20"), ("Mo", "30"), ("Mya", "32"), ("Mj", "52")]
 
+total_sum = 0
+for i in lst1:
+    total = int(i[1])
+    total_sum = total_sum + total
+
+print(total_sum) 
