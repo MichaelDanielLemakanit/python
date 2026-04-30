@@ -1,35 +1,35 @@
 # Write a program that displays a numbers 1 to 50 inside a list.
-# number = list(range(1, 50))
-# result = []
+number = list(range(1, 50))
+result = []
 
-# for i in number:
-#     result.append(i)
+for i in number:
+    result.append(i)
 
 
-# print(result)
+print(result)
 
 # From 1 above display the ones divisible by 7 or 5 inside a list.
-# number = list(range(1, 50))
-# result = []
+number = list(range(1, 50))
+result = []
 
-# for i in number:
-#     if i % 7 == 0 and i % 5 == 0: 
-#        result.append(i)
+for i in number:
+    if i % 7 == 0 and i % 5 == 0: 
+       result.append(i)
 
-# print(result)
+print(result)
 
 # Find sum and average of values in the range between 10 to 40.
-# number = list(range(10, 40))
-# total_sum = 0
+number = list(range(10, 40))
+total_sum = 0
 
-# for i in number:
-#     total_sum = total_sum +i
+for i in number:
+    total_sum = total_sum +i
 
-# number_len =len(number)
-# avarage = total_sum / number_len
+number_len =len(number)
+avarage = total_sum / number_len
 
-# print("sum:", total_sum)
-# print("avarage:", avarage)
+print("sum:", total_sum)
+print("avarage:", avarage)
 
 
 # Put in a list the first 10 odd numbers between 10 to 50. 
