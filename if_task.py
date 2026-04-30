@@ -15,17 +15,19 @@ account_type = input("Enter account type (Standard or Premium): ").lower()
 
 if account_type == "standard":
     if amount > 500:
-        print("Transaction exceeds the limit for Standard accounts")
+        res="Transaction exceeds the limit for Standard accounts"
     else:
-        print("Transaction approved.")
+        res="Transaction approved."
 else:
     if account_type == "premium":
         if amount > 1000:
-            print("Transaction exceeds the limit for Premium accounts.")
+            res="Transaction exceeds the limit for Premium accounts."
         else:
-            print("Transaction approved")
+            res="Transaction approved"
     else:
-        print("wrong account type")
+        res="wrong account type"
+
+print(res)
 
 
 
@@ -101,7 +103,7 @@ if x % 2 == 0:
     if y % 2 == 0:
         print("x and y are both even")
     else:
-        print("Only x is even") # (Included for logical completeness)
+        print("Only x is even")
 else:
     if y % 2 == 0:
         print("Only y is even")

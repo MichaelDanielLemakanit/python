@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Circle with Text</title>
+    <style>
+        .loader {
+            width: 100px;
+            height: 100px;
+            border: 10px solid green;
+            border-top: 10px solid grey;
+            border-radius: 50%;
+            
+            /* Center the text inside */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            animation: rotate 3s infinite linear;
+        }
+
+        .content {
+            /* This "un-spins" the text so it stays upright */
+            animation: counter-rotate 3s infinite linear;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes counter-rotate {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="loader">
+        <div class="content">LOADING</div>
+    </div>
+
+</body>
+</html>
