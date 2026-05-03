@@ -1,51 +1,63 @@
-# Write a program that displays a numbers 1 to 50 inside a list.
-number = list(range(1, 50))
-result = []
+# # Write a program that displays a numbers 1 to 50 inside a list.
+# number = list(range(1, 50))
+# result = []
 
-for i in number:
-    result.append(i)
-
-
-print(result)
-
-# From 1 above display the ones divisible by 7 or 5 inside a list.
-number = list(range(1, 50))
-result = []
-
-for i in number:
-    if i % 7 == 0 and i % 5 == 0: 
-       result.append(i)
-
-print(result)
-
-# Find sum and average of values in the range between 10 to 40.
-number = list(range(10, 40))
-total_sum = 0
-
-for i in number:
-    total_sum = total_sum +i
-
-number_len =len(number)
-avarage = total_sum / number_len
-
-print("sum:", total_sum)
-print("avarage:", avarage)
+# for i in number:
+#     result.append(i)
 
 
-# Put in a list the first 10 odd numbers between 10 to 50. 
+# print(result)
 
-number = list(range(10, 50,))
-result = []
+# # From 1 above display the ones divisible by 7 or 5 inside a list.
+# number = list(range(1, 50))
+# result = []
 
-for i in number:
-    if i % 2 !=0:
-        result.__len__(i)
-print(result)
+# for i in number:
+#     if i % 7 == 0 and i % 5 == 0: 
+#        result.append(i)
+
+# print(result)
+
+# # Find sum and average of values in the range between 10 to 40.
+# number = list(range(10, 40))
+# total_sum = 0
+
+# for i in number:
+#     total_sum = total_sum +i
+
+# number_len =len(number)
+# avarage = total_sum / number_len
+
+# print("sum:", total_sum)
+# print("avarage:", avarage)
 
 
+# # Put in a list the first 10 odd numbers between 10 to 50. 
+
+# number = list(range(10, 50,))
+# result = []
+# count = 0
+
+# for i in number:
+#     if i % 2 !=0:
+#         result.append(i)
+#         count= count+i
+#         if count == 10:   
+#             break
+# print(count)
 
 
 # write a program that takes a number as input and prints its multiplication table up to 10 using a for loop.
+# user = int(input("enter something: "))
+# lst = [1,2, 3, 4,5,6,7,8,9,10]
+# #loop through the list
+# for i in lst:
+#     mult = i*input
+#     print(f"{i}*{user}={mult}")
+
+
+
+
 # write a program that counts and prints the number of even numbers between 1 and 50 using a for loop
 # ls1 = [ (“Jay”, ‘20’), (“Mo”, ‘30’), (“Mya”, ‘32’) ]
 # Display the total quantity of the 3 above.
@@ -58,3 +70,13 @@ for i in lst1:
     total_sum = total_sum + total
 
 print(total_sum) 
+# Display the total quantity of the 3 above.   
+                     
+# lst1 = [("Jay", "20"), ("Mo", "30"), ("Mya", "32"), ("Mj", "52")]
+
+# total_sum = 0
+# for i in lst1:
+#     total = int(i[1])
+#     total_sum = total_sum + total
+
+# print(total_sum) 
