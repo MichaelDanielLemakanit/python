@@ -102,11 +102,31 @@
 
 # print(number)
 
+def largest_number(num1, num2, num3):
+    if num1 > num2 and num1 > num3:
+        large = num1
+    if num2 > num1 and num2 > num3:
+        large = num2
+    else:
+        large = num3
+    return large
+
+
+input1 = int(input("Enter first number: " ))
+input2 = int(input("Enter second number: " ))
+input3 = int(input("Enter third number: " ))
+
+
+check1 = largest_number(input1, input2, input3)
+print(check1)
+
+    
+
 
 # TASK 6:Using Python or PHP or Java or Ruby or JavaScript
 # Write a program that lets the user input a password. Give them only 4 attempts to check the passwords entered against “admin@123”. If the password is correct access is granted. After you show them a message , the account is blocked.
-user_name = input("enter your user name")
-user_password = input("enter your user name")
+# user_name = input("enter your user name")
+# user_password = input("enter your user name")
 
 
 # TASK 7: Using Python or PHP or Java or Ruby or JavaScript

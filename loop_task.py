@@ -62,14 +62,14 @@
 # ls1 = [ (“Jay”, ‘20’), (“Mo”, ‘30’), (“Mya”, ‘32’) ]
 # Display the total quantity of the 3 above.
 # Use standard straight quotes to remove red underlines
-lst1 = [("Jay", "20"), ("Mo", "30"), ("Mya", "32"), ("Mj", "52")]
+# lst1 = [("Jay", "20"), ("Mo", "30"), ("Mya", "32"), ("Mj", "52")]
 
-total_sum = 0
-for i in lst1:
-    total = int(i[1])
-    total_sum = total_sum + total
+# total_sum = 0
+# for i in lst1:
+#     total = int(i[1])
+#     total_sum = total_sum + total
 
-print(total_sum) 
+# print(total_sum) 
 # Display the total quantity of the 3 above.   
                      
 # lst1 = [("Jay", "20"), ("Mo", "30"), ("Mya", "32"), ("Mj", "52")]
@@ -79,4 +79,8 @@ print(total_sum)
 #     total = int(i[1])
 #     total_sum = total_sum + total
 
-# print(total_sum) 
+# print(total_sum)
+
+
+2,4,7, 10, 12
+
